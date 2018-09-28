@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/img_menu"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_centerVertical="true"
+    android:src="@drawable/menu_icon"
+    android:tint="#FFF"/>
+
+<TextView
+    android:id="@+id/toolbar_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="NY Times Most Popular"
+    android:textColor="#FFF"
+    android:layout_marginLeft="10dp"
+    android:textStyle="normal"
+    android:textSize="20sp"
+    android:layout_centerInParent="true"
+    android:layout_toRightOf="@+id/img_menu" />
+
+<ImageView
+    android:layout_centerVertical="true"
+    android:id="@+id/search"
+    android:padding="6dp"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:tint="#FFF"
+    android:background="@android:drawable/ic_menu_search"
+    android:layout_toRightOf="@+id/toolbar_title"
+    />
+
+<ImageView
+    android:layout_centerVertical="true"
+    android:id="@+id/img_more"
+    android:layout_width="20dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="20dp"
+    android:src="@drawable/menu"
+    android:layout_alignParentRight="true" />
+</RelativeLayout>

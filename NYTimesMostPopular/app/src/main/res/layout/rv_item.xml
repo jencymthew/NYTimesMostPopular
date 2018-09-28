@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_img"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        >
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/circle"
+        />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/relative_img"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="30dp"
+        >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLength="60"
+        />
+    <TextView
+        android:id="@+id/byline"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:maxLength="40"
+        android:textColor="@color/light_grey"/>
+
+        <RelativeLayout
+            android:id="@+id/date_text"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+          >
+
+            <ImageView
+                android:id="@+id/c_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/c_img"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/light_grey"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_arrow"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        >
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/arrow"
+
+      />
+        </RelativeLayout>
+</RelativeLayout>
